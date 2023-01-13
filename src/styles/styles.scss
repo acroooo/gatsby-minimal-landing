@@ -161,7 +161,24 @@ header {
     font-size: $font-size-sm;
     letter-spacing: 1.75px;
     text-transform: uppercase; 
-    color: $black;
+    color: $gray;
     position: absolute;
     bottom: 20px;
+    background-color: $black;
+    padding: 10px 20px;
+}
+
+.fixed-misc {
+    position: fixed;
+    top: 50%;
+    transform: rotate(-90deg) translateY(-50%);
+    right: -48px;
+    font-transform: uppercase;
+    font-weight: $font-weight-light;
+    font-size: $font-size-sm;
+    letter-spacing: 1.75px;
+    color: $white; 
+    mix-blend-mode: difference;
+    z-index: 8;
+
 }

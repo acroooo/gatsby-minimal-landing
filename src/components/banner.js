@@ -59,6 +59,7 @@ const Banner = () => {
                 <div className="scroll">
                     Scroll down
                 </div>
+                <div className="fixed-misc">hernang.work@gmail.com</div>
             </div>
         </div>
     )
