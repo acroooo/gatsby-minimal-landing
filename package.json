@@ -1,7 +1,7 @@
 {
-  "name": "Mkrs",
+  "name": "Minimal landing page",
   "private": true,
-  "description": "Mkrs is a software company",
+  "description": "Minimal landing page with Gatsby",
   "version": "0.1.0",
   "author": "Hernán Chamorro <hernang.work@outlook.com>",
   "dependencies": {
@@ -32,7 +32,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",

@@ -1,42 +1,7 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const Banner = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            bastien: file(relativePath: { eq: "bastien-nvs-9pe2UPqAfo8-unsplash.jpg" }) {
-                childImageSharp {
-                    fluid(maxWidth: 300) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            jackdong: file(relativePath: { eq: "jack-dong-3_DJ9_6bZVU-unsplash.jpg"}){
-                childImageSharp {
-                    fluid(maxWidth: 300) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            jackdong2: file(relativePath: { eq: "jack-dong-fFP8bPq_Mew-unsplash.jpg"}){
-                childImageSharp {
-                    fluid(maxWidth: 300) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            moritz: file(relativePath: { eq: "moritz-mentges-WpCgNwpJsVY-unsplash.jpg"}){
-                childImageSharp {
-                    fluid(maxWidth: 300) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            
-        }
-    `)
-
 
     return (
         <div className="banner">
