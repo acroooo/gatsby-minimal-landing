@@ -19,7 +19,7 @@ Minimal basic page created with Gatsby. MIT License
 
 **Screenshots**
 
-<img href="./src/images/home1.png" alt="Landing page">
+<img href="https://github.com/acroooo/gatsby-portfolio/src/images/home1.png" alt="Landing page">
 
 **Greetz**
 
