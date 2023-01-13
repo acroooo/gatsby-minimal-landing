@@ -15,7 +15,7 @@ $font-size-lg: 1.25rem;
 $font-size-sm: 0.675rem;
 $font-size-md: 1.125rem;
 $font-size-xl: 1.5rem;
-$font-size-xxl: 2rem;
+$font-size-xxl:3rem;
 $font-weight-thin: 100;
 $font-weight-light: 300;
 $font-weight-normal: 400;
@@ -29,6 +29,8 @@ html, body {
     background: var($white);
     font-family: $font;
     font-size: $font-size-base;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -68,10 +70,9 @@ header {
                 font-weight: $font-weight-normal;
                 font-size: $font-size-base;
                 text-decoration: none;
-                color: $yellow-dark;
+                color: $black;
                 letter-spacing: 1.75px;
                 text-transform: uppercase;
-                border-color: $yellow-light;
                 border-bottom: 2px solid;
                 padding-bottom: 5px;                
             }
@@ -95,7 +96,72 @@ header {
     }
 }
 
+// Banner
+.banner{
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    position: relative;
+    height: 100vh;
+    .row{
+        position: relative;
+        .main-text{
+            font-size: $font-size-xxl;
+            text-transform: uppercase;
+            letter-spacing: 42px;
+            font-weight: $font-weight-bold;
+            color: $white;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            transform:translateY(-50%);
+            text-align: center;
+            mix-blend-mode: difference;
+            z-index: 9;
+            @media (max-width: 1440px) {
+                font-size: $font-size-xxl;
+                letter-spacing: 32px;
+            }
+        }
+    }
+}
 
+.main-image {
+    width: 536px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.side-image{
+    width: 260px;
+    position:absolute;
 
+    &.left{
+        left:16px;
+    }
+    &.right{
+        right:2px;
+        bottom: 0.1px;
+    }
+}
 
+.other-image {
+    position: absolute;
+    width: 20%;
+    left: 10%;
+    bottom: 5%;
+    z-index: 1;
+}
+
+.scroll {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-sm;
+    letter-spacing: 1.75px;
+    text-transform: uppercase; 
+    color: $black;
+    position: absolute;
+    bottom: 20px;
+}
